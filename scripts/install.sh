@@ -271,7 +271,7 @@ cd "$TMP" \
           NODE="$node" /bin/bash "scripts/clean-old.sh" "-y"
           ret=$?
         else
-          NODE="$node" /bin/bash "scripts/clean-old.sh" </dev/tty
+          NODE="$node" /bin/bash "scripts/clean-old.sh" </dev/null
           ret=$?
         fi
       fi
